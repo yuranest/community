@@ -1,0 +1,29 @@
+.header {
+  margin-top: 45px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7); /* 70% opacity */
+}
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  margin: 41px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 432px) {
+  .header__logo {
+    width: 126px;
+    height: 24px;
+    margin: 0px 167px 32px 27px;
+  }
+
+  .header {
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+}

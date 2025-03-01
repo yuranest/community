@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: black;
+  padding: 15px;
+}
+
+/* Main Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark semi-transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  min-width: 200px;
+  top: 100%;
+  left: 0;
+  text-align: left;
+}
+
+/* Dropdown Items */
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
