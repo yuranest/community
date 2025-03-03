@@ -1,27 +1,22 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: white;
-  text-align: center;
-}
-
 /* Navigation Bar */
 .navbar {
-  background-color: black;
   padding: 15px;
 }
 
 /* Main Menu */
 .menu {
+  color: white;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
 }
 
 .menu li {
   display: inline-block;
   position: relative;
+  margin-right: 15px;
 }
 
 /* Dropdown Button */
@@ -38,12 +33,8 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark semi-transparent */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  min-width: 200px;
-  top: 100%;
-  left: 0;
   text-align: left;
+  min-width: 200px;
 }
 
 /* Dropdown Items */
@@ -57,10 +48,6 @@ body {
   padding: 10px;
   display: block;
   transition: background 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Show Dropdown on Hover */
