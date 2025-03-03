@@ -1,9 +1,22 @@
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
 .news__section {
-  background-image: url(/images/season_21_short.jpg);
+  background-image: url(/images/season_news\ back.jpg);
   background-size: cover;
   min-height: 60vh;
   width: 100%;
-  background-origin: border-box;
-  background-position: center center;
-  padding-top: 40px;
+  background-position: center;
+  padding: 40px;
+  color: white;
+}
+
+#games {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }

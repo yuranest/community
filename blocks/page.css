@@ -1,14 +1,10 @@
 /* General Styles */
-body {
+.page {
   font-family: Arial, sans-serif;
   background-image: url("../images/main_background.png"); /* Adjust the path */
   color: white;
   text-align: center;
-}
-
-.page {
   margin: 0;
-
   background-size: cover; /* Makes sure the image covers the whole screen */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */

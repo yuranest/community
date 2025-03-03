@@ -1,6 +1,18 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333; /* Dark Gray */
+  padding-top: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
 /* Navigation Bar */
+
 .navbar {
-  padding: 15px;
+  padding: 0;
+  margin-left: auto;
 }
 
 /* Main Menu */
@@ -21,12 +33,19 @@
 
 /* Dropdown Button */
 .dropbtn {
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 20px;
   display: inline-block;
+}
+.dropbtn:hover {
+  color: white; /* Keep text white on hover */
+}
+a {
+  color: white !important;
+  text-decoration: none;
 }
 
 /* Dropdown Content */
@@ -43,7 +62,7 @@
 }
 
 .dropdown-content a {
-  color: white;
+  color: black !important;
   text-decoration: none;
   padding: 10px;
   display: block;
