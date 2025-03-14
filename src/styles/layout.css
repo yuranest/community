@@ -103,7 +103,7 @@ html {
   display: block;
 }
 
-.menu a {
+.sidebar .menu a {
   display: block;
   color: white;
   text-decoration: none;
