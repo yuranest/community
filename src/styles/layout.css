@@ -26,6 +26,12 @@ html {
   z-index: 1000;
 }
 
+.header__title {
+  margin: 10px 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -42,6 +48,15 @@ html {
 .menu li {
   margin: 0 15px;
   position: relative;
+}
+
+.navbar .menu li a {
+  padding: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar .menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar .menu a {
@@ -79,9 +94,27 @@ html {
   position: fixed;
   width: 100%;
   bottom: 0;
+  padding: 10px 0;
 }
 
-/* === Sidebar Navigation === */
+.footer__links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Navigation */
 .sidebar {
   position: fixed;
   left: 0;
@@ -117,12 +150,12 @@ html {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* === Adjust Content Section for Sidebar === */
+/* Adjust Content Section for Sidebar */
 .page__content {
   margin-left: 260px; /* Moves content away from sidebar */
   padding: 20px;
   margin-top: 80px; /* Pushes content below the header */
-  text-align: center; /* Centers text inside main content */
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,18 +165,28 @@ html {
   margin-right: auto;
 }
 
-.settings-image {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 5px;
+.page__content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
+.page__content section,
+.page__content article {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.settings-image,
 .news-image {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
   border-radius: 5px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 article {
@@ -151,4 +194,30 @@ article {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+}
+
+.popup-content {
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  margin: 100px auto;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
 }
