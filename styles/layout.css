@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url("../images/39dedf330ae07d2b.gif");
+  background-image: url("../images/main_background.png");
   color: white;
   text-align: center;
   background-size: 100% 100%;
@@ -16,7 +16,7 @@ html {
 
 /* Header Styles */
 .header {
-  background: linear-gradient(to right, #1a1a1a, #333);
+  background: black;
   color: white;
   padding: 15px 20px;
   text-align: center;
@@ -38,6 +38,19 @@ html {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Header Logo (GIF Button) */
+.header__logo img {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.header__logo:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Title */
@@ -242,8 +255,8 @@ html {
 
 .page__content section,
 .page__content article {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 20px;
+  /*background: rgba(255, 255, 255, 0.15);*/
+  /*padding: 20px;*/
   margin: 10px 10px 10px 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -303,4 +316,60 @@ article {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: left;
   box-sizing: border-box;
+}
+/* Background box for better readability */
+.content-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  color: white;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Style the headers */
+.content-box h2,
+.content-box h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content-box h2 {
+  font-size: 28px;
+  color: #ffcc00;
+}
+
+.content-box h3 {
+  font-size: 22px;
+  color: #ff9933;
+}
+
+/* Style lists */
+.content-box ul,
+.content-box ol {
+  padding-left: 20px;
+}
+
+.content-box ul li::before {
+  content: "✔ ";
+  color: #00ff00;
+}
+
+.content-box ol li::before {
+  content: "🔥 ";
+  color: #ff6600;
+}
+
+/* Links */
+.content-box a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-box a:hover {
+  text-decoration: underline;
 }
