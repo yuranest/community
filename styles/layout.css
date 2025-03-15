@@ -168,6 +168,20 @@ html {
   margin-top: 80px;
   padding: 20px;
 }
+.newbie-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newbie-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+}
 
 /* Sidebar Navigation */
 .sidebar {
