@@ -114,7 +114,6 @@ html {
 }
 
 .dropdown-content a {
-  padding: 5, 5, 5, 5;
   color: white;
   display: block;
   transition: background 0.3s;
