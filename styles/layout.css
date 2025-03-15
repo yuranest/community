@@ -16,11 +16,7 @@ html {
 
 /* Header Styles */
 .header {
-  background: linear-gradient(
-    to right,
-    #1a1a1a,
-    #333
-  ); /* Dark gradient background */
+  background: linear-gradient(to right, #1a1a1a, #333);
   color: white;
   padding: 15px 20px;
   text-align: center;
@@ -99,6 +95,7 @@ html {
 }
 
 .dropdown-content {
+  list-style: none;
   display: none;
   position: absolute;
   top: 100%;
@@ -108,6 +105,8 @@ html {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   z-index: 999;
+  padding: 0;
+  width: auto;
 }
 
 .dropdown-content li {
@@ -115,7 +114,7 @@ html {
 }
 
 .dropdown-content a {
-  padding: 10px 15px;
+  padding: 5, 5, 5, 5;
   color: white;
   display: block;
   transition: background 0.3s;
