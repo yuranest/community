@@ -406,3 +406,60 @@ article {
 .footer__links a:hover {
   text-decoration: underline;
 }
+
+/* Discord Setup Section */
+.discord-setup {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+  color: white;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Style Ordered List */
+.discord-setup ol {
+  padding-left: 20px;
+}
+
+.discord-setup ol li {
+  margin-bottom: 10px;
+}
+
+/* Highlighted Code Blocks */
+.discord-setup code {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Links */
+.discord-setup a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.discord-setup a:hover {
+  text-decoration: underline;
+}
+
+/* Video Container for Responsiveness */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}

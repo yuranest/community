@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Настройки Дискорда</title>
+    <link rel="stylesheet" href="../styles/layout.css" />
+  </head>
+  <body class="page">
+    <div id="header"></div>
+    <div id="sidebar"></div>
+
+    <!-- Main Content Area -->
+    <main class="page__content" id="page__content">
+      <h2>🎧 Настройки Дискорда</h2>
+      <p>
+        Используйте этот гайд, чтобы настроить Discord и устранить проблемы с
+        голосовым чатом.
+      </p>
+
+      <div class="discord-setup">
+        <h3>✅ Как исправить голосовой чат в Discord:</h3>
+        <ol>
+          <li>
+            Выключить <strong>все VPN</strong>, Warp и другой подобный софт.
+          </li>
+          <li>Зайти в папку <code>"pre-configs"</code>.</li>
+          <li>Запустить файл <code>"DiscordFix.bat"</code>.</li>
+          <li>Готово! 🎉 Войс теперь должен работать.</li>
+          <li>
+            Если не сработало, убедитесь, что у вас **публичные DNS сервера**
+            (<code>1.1.1.1</code> или <code>8.8.8.8</code>).
+          </li>
+        </ol>
+
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3AC4PSY8SPs?start=343"
+            title="Настройка DNS для Discord"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="popup-title"></h2>
+        <p id="popup-text"></p>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../js/include.js"></script>
+  </body>
+</html>
