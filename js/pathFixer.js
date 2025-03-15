@@ -1,6 +1,6 @@
 // Detect if running on GitHub Pages or locally
 const isGitHubPages = window.location.hostname.includes("github.io");
-const basePath = isGitHubPages ? "/your-repository-name/" : "/";
+const basePath = isGitHubPages ? "/community/" : "/";
 
 // Function to fix links dynamically
 function resolvePath(path) {
